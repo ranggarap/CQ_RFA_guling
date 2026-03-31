@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Security.Cryptography;
+using System.ComponentModel;
 namespace PraktikumADO
 {
     public partial class Form1 : Form
@@ -90,6 +91,27 @@ namespace PraktikumADO
                 conn.Close();
             }
             catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnHitungDosen_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Koneksi();
+                conn.Open();
+
+                string query = "SELECT COUNT (*) FROM Dosen";
+                cmd = new SqlCommand(query, conn);
+
+                int jumlah = (int)cmd.ExecuteScalar();
+                txtHasil.Text = jumlah.ToString();
+
+                conn.Close();
+            }
+            catch(Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
