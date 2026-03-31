@@ -28,13 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnConnect = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnConnect
+            // 
+            this.btnConnect.Location = new System.Drawing.Point(82, 333);
+            this.btnConnect.Name = "btnConnect";
+            this.btnConnect.Size = new System.Drawing.Size(100, 30);
+            this.btnConnect.TabIndex = 0;
+            this.btnConnect.Text = "connect";
+            this.btnConnect.UseVisualStyleBackColor = true;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnConnect);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnConnect;
     }
 }
 
