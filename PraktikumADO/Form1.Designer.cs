@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.btnConnect = new System.Windows.Forms.Button();
+            this.btnHitungMhs = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnConnect
@@ -40,11 +41,21 @@
             this.btnConnect.Text = "connect";
             this.btnConnect.UseVisualStyleBackColor = true;
             // 
+            // btnHitungMhs
+            // 
+            this.btnHitungMhs.Location = new System.Drawing.Point(289, 333);
+            this.btnHitungMhs.Name = "btnHitungMhs";
+            this.btnHitungMhs.Size = new System.Drawing.Size(100, 30);
+            this.btnHitungMhs.TabIndex = 1;
+            this.btnHitungMhs.Text = "Hitung Mhs";
+            this.btnHitungMhs.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnHitungMhs);
             this.Controls.Add(this.btnConnect);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -55,6 +66,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnConnect;
+        private System.Windows.Forms.Button btnHitungMhs;
     }
 }
 
